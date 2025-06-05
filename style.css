@@ -7,43 +7,85 @@
 }
 
 body {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	background-color: #b68121;
-	padding: 30px;
-	gap: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #b68121;
+    padding: 30px;
+    gap: 40px;
 }
 
 .title {
     font-size: 64px;
+    font-weight: bold;
+    text-align: center;
 }
 
 .credit {
-    font-size: 24px;
-}
-
-.gridBox {
-    display: flex;
-    height: 512px;
-    width: 512px;
-    border: 5px solid #231710;
-    flex-wrap: wrap;
-    align-items: stretch;
-    background-color: #bca193;
-
+    font-size: 20px;
+    margin-top: 20px;
+    text-decoration: none;
+    color: #231710;
 }
 
 .gameWindow {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     gap: 2rem;
-
+    flex-wrap: wrap;
 }
 
 .settings {
     display: flex;
     flex-direction: column;
-    flex: 1;
-    justify-content: space-between;
+    gap: 10px;
+}
+
+button {
+    padding: 10px 16px;
+    background-color: #231710;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #4a3115;
+}
+
+.gridBox {
+    display: grid;
+    height: 512px;
+    width: 512px;
+    border: 5px solid #231710;
+    background-color: #bca193;
+}
+
+.cell {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    width: 100%;
+    height: 100%;
+}
+
+@media (max-width: 600px) {
+    .gridBox {
+        width: 90vw;
+        height: 90vw;
+    }
+
+    .cell {
+        width: 100%;
+        height: 100%;
+    }
+
+    .title {
+        font-size: 48px;
+    }
+
+    .credit {
+        font-size: 16px;
+    }
 }
