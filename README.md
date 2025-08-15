@@ -11,7 +11,7 @@
 
 ## Live Demo
 
-👉 [View MySketch](https://nicholaseb0.github.io/MySketch/)
+👉 [View MySketch](https://nicholaseb0.github.io/NicholasSketchPad/)
 
 ## Author
 
